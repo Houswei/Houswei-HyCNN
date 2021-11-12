@@ -1,61 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6d2a97d-fc41-4a59-90c2-024815f4ce5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/HyCNN.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Indian_pines_corrected.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Indian_pines_gt.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hycnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hycnn1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hycnn2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/metric.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reference/PyTorch笔记.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reference/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/acc_Train/events.out.tfevents.1636636673.new-PC.16696.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/acc_Train/events.out.tfevents.1636692017.new-PC.25456.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636530461.new-PC.6032.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636530666.new-PC.6276.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636538360.new-PC.5352.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636545967.new-PC.14120.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636546074.new-PC.14636.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636546114.new-PC.14600.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636548277.new-PC.15260.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636548352.new-PC.15820.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636551690.new-PC.13424.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636631494.new-PC.25980.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636631525.new-PC.27132.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636631782.new-PC.24504.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636634141.new-PC.20540.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636634225.new-PC.21788.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636634456.new-PC.24904.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636634567.new-PC.19248.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636634792.new-PC.19512.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636634946.new-PC.27352.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636636383.new-PC.20832.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636636640.new-PC.16696.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636690763.new-PC.28408.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636690835.new-PC.28896.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636690969.new-PC.1964.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636691420.new-PC.29464.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636691741.new-PC.29216.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/events.out.tfevents.1636691998.new-PC.25456.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/loss_Train/events.out.tfevents.1636636673.new-PC.16696.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runs/models/loss_Train/events.out.tfevents.1636692017.new-PC.25456.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapshot/snapshot-loss=1-acc=1.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapshot/snaptshot.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/hydataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/readMat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/training.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/util.py" afterDir="false" />
+    <list default="true" id="d6d2a97d-fc41-4a59-90c2-024815f4ce5c" name="Changes" comment="ex">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapshot/snapshot-loss=1-acc=1.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +102,14 @@
       <option name="presentableId" value="Default" />
       <updated>1636529699540</updated>
     </task>
+    <task id="LOCAL-00001" summary="ex">
+      <created>1636696013416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636696013416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +122,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ex" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

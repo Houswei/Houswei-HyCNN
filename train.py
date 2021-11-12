@@ -103,7 +103,7 @@ if __name__ == "__main__":
     # 准备数据
     testRation = 0.3
     batchSize = 32
-    snapshotPath = "./snapshot/snapshot-loss=1-acc=1.pth"
+    snapshotPath = "./snapshot/snapshot-loss-1-acc-1.pth"
     dataPath = "data/Indian_pines_corrected.mat"
     labelPath = "data/Indian_pines_gt.mat"
     allDataset = HyDataSet(dataPath, labelPath, name="indian_pines", windowSize=5)  # 定义的数据集
@@ -177,7 +177,7 @@ if __name__ == "__main__":
         valLoss,valMetrics = training.pass_epoch(model, criterion, optimizer, validation_data_loader, Logger, writer=writer, device=device, batch_metrics=metrics)
 
 
-    savePath = './snapshot/snapshot-loss={}-acc={}.pth'.format('1', '1')
+    savePath = './snapshot/snapshot-loss-{}-acc-{}.pth'.format('1', '1')
     torch.save(model.state_dict(), savePath)
 
     writer.close()
