@@ -47,9 +47,8 @@ class HyDataSet(Dataset):
         inputData = np.transpose(inputData, (0,1,4,2,3))
         # inputData = np.transpose(inputData, (0, 3, 1, 2))
         inputData = inputData.astype('float32')
-        inputData -= np.min(inputData)
-        inputData /= np.max(inputData)
-
+        # inputData -= np.min(inputData)
+        # inputData /= np.max(inputData)
         inputLabel = inputLabel.astype('int64')
         return inputData, inputLabel
 

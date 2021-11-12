@@ -101,7 +101,7 @@ if __name__ == "__main__":
     # torch.backends.cudnn.deterministic = True
 
     # 准备数据
-    testRation = 0.3
+    testRation = 0.5
     batchSize = 32
     snapshotPath = "./snapshot/snapshot-loss-1-acc-1.pth"
     dataPath = "data/Indian_pines_corrected.mat"
