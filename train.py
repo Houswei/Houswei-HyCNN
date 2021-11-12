@@ -159,25 +159,29 @@ if __name__ == "__main__":
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=4, gamma=0.1)
 
     # 训练
-    num_epochs = 20
+    num_epochs = 100
 
     start_epoch = 0
     writer = SummaryWriter("runs/models")
     writer.iteration, writer.interval = 0, 10
 
     isTrainFirst = True
-    for epoch in range(num_epochs):
-        print('\nEpoch {}/{}'.format(epoch + 1, num_epochs))
-        print('-' * 10)
+    try:
+        for epoch in range(num_epochs):
+            print('\nEpoch {}/{}'.format(epoch + 1, num_epochs))
+            print('-' * 10)
 
-        model.train()
-        training.pass_epoch(model, criterion, optimizer, train_data_loader, Logger, writer=writer, device=device, batch_metrics=metrics)
+            model.train()
+            training.pass_epoch(model, criterion, optimizer, train_data_loader, Logger, writer=writer, device=device, batch_metrics=metrics)
 
-        model.eval()
-        valLoss,valMetrics = training.pass_epoch(model, criterion, optimizer, validation_data_loader, Logger, writer=writer, device=device, batch_metrics=metrics)
+            model.eval()
+            valLoss,valMetrics = training.pass_epoch(model, criterion, optimizer, validation_data_loader, Logger, writer=writer, device=device, batch_metrics=metrics)
+    except KeyboardInterrupt:
+        print("KeyboardInterrupt")
+    finally:
+        print("finally")
 
-
-    savePath = './snapshot/snapshot-loss-{}-acc-{}.pth'.format('1', '1')
+    savePath = './snapshot/snapshot-loss-{}-acc-{}.pth'.format('4', '4')
     torch.save(model.state_dict(), savePath)
 
     writer.close()

@@ -49,6 +49,8 @@ class HyCnn(nn.Module):
         self.relu6 = nn.ReLU()
         self.drop2 = nn.Dropout(0.4)
         self.out1 = nn.Linear(128, 16)
+        self.initialize_weights()
+
 
     def forward(self, x):
         x = self.conv1(x)
@@ -82,13 +84,9 @@ class HyCnn(nn.Module):
 
     def initialize_weights(self):
         for m in self.modules():
-            if isinstance(m, nn.Conv2d):
-                torch.nn.init.xavier_normal_(m.weight.data)
-                if m.bias is not None:
-                    m.bias.data.zero_()
+            if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
+                nn.init.kaiming_normal_(m.weight)
+                nn.init.zeros_(m.bias)
             elif isinstance(m, nn.BatchNorm2d):
                 m.weight.data.fill_(1)
-                m.bias.data.zero_()
-            elif isinstance(m, nn.Linear):
-                torch.nn.init.normal_(m.weight.data, 0, 0.01)
                 m.bias.data.zero_()
