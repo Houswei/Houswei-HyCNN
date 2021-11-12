@@ -23,7 +23,7 @@ import torch.nn as nn
 from torch import optim
 from torch.utils.tensorboard import SummaryWriter
 # from torchsummary import summary
-from models.hycnn1 import HyCnn
+from models.hycnn3 import HyCnn
 from utils.util import EarlyStopping,Logger
 from utils.hydataset import HyDataSet
 import utils.training as training
