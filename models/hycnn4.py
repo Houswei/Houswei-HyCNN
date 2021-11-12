@@ -73,7 +73,7 @@ class HyCnn(nn.Module):
         x = self.flat1(x)
         x = self.lin1(x)
         x = self.relu9(x)
-        x = self.drop1(x)
+        # x = self.drop1(x)
         x = self.lin2(x)
         # x = self.relu6(x)
         # x = self.drop2(x)
