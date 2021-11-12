@@ -183,6 +183,7 @@ if __name__ == "__main__":
 
     savePath = './snapshot/snapshot-loss-{}-acc-{}.pth'.format('4', '4')
     torch.save(model.state_dict(), savePath)
+    print("model saved!!!")
 
     writer.close()
 
