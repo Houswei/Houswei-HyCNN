@@ -23,10 +23,11 @@ import torch.nn as nn
 from torch import optim
 from torch.utils.tensorboard import SummaryWriter
 # from torchsummary import summary
-from models.hycnn1 import HyCnn
+from models.hycnn4 import HyCnn
 from utils.util import EarlyStopping,Logger
 from utils.hydataset import HyDataSet
 import utils.training as training
+import argparse
 
 
 def train(start_epoch, num_epochs):
@@ -94,6 +95,12 @@ def train(start_epoch, num_epochs):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run deep learning experiments on"
+                                                 " various hyperspectral datasets")
+    parser.add_argument('--iteration', type=int, default=-20, help="iterations to run...")
+
+    args = parser.parse_args()
+
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     print('Running on device: {}'.format(device))
 
@@ -159,7 +166,7 @@ if __name__ == "__main__":
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=4, gamma=0.1)
 
     # 训练
-    num_epochs = 100
+    num_epochs = args.iteration
 
     start_epoch = 0
     writer = SummaryWriter("runs/models")

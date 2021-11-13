@@ -42,10 +42,10 @@ class HyCnn(nn.Module):
         self.relu8 = nn.ReLU()
 
         self.flat1 = nn.Flatten()
-        self.lin1 = nn.Linear(2240, 256)
+        self.lin1 = nn.Linear(2240, 128)
         self.relu9 = nn.ReLU()
-        self.drop1 = nn.Dropout(0.4)
-        self.lin2 = nn.Linear(256, 16)
+        self.drop1 = nn.Dropout(0.5)
+        self.lin2 = nn.Linear(128, 16)
         self.relu6 = nn.ReLU()
         self.drop2 = nn.Dropout(0.4)
         self.out1 = nn.Linear(128, 16)
