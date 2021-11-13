@@ -98,11 +98,20 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run deep learning experiments on"
                                                  " various hyperspectral datasets")
     parser.add_argument('--iteration', type=int, default=20, help="iterations to run...")
+    parser.add_argument('--modelType', type=int, default=4, help="iterations to run...")
 
     args = parser.parse_args()
 
+    for k in args.__dict__:
+        print(k + ": " + str(args.__dict__[k]))
+
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     print('Running on device: {}'.format(device))
+
+    if(args.modelType == 4):
+        from models.hycnn4 import HyCnn
+    elif(args.modelType == 1):
+        from models.hycnn1 import HyCnn
 
     # torch.backends.cudnn.benchmark = True
     # torch.backends.cudnn.deterministic = True
@@ -110,7 +119,8 @@ if __name__ == "__main__":
     # 准备数据
     testRation = 0.5
     batchSize = 32
-    snapshotPath = "./snapshot/snapshot-loss-1-acc-1.pth"
+    isLoadWeights = False
+    snapshotPath = "./snapshot/snapshot-loss-4-acc-4.pth"
     dataPath = "data/Indian_pines_corrected.mat"
     labelPath = "data/Indian_pines_gt.mat"
     allDataset = HyDataSet(dataPath, labelPath, name="indian_pines", windowSize=5)  # 定义的数据集
@@ -141,7 +151,7 @@ if __name__ == "__main__":
     # 自定义的model
     model = HyCnn()
     model.to(device)
-    isLoadWeights = False
+
     if(len(snapshotPath)>0 and isLoadWeights):
         model.loadWeights(snapshotPath, device)
     else:
