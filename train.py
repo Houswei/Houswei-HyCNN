@@ -97,7 +97,7 @@ def train(start_epoch, num_epochs):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run deep learning experiments on"
                                                  " various hyperspectral datasets")
-    parser.add_argument('--iteration', type=int, default=-20, help="iterations to run...")
+    parser.add_argument('--iteration', type=int, default=20, help="iterations to run...")
 
     args = parser.parse_args()
 

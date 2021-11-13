@@ -40,12 +40,13 @@ class HyCnn(nn.Module):
 
         self.conv8 = nn.Conv3d(35, 40, kernel_size=(1, 1, 1), stride=(2, 2, 2), padding=(0, 0, 0))
         self.relu8 = nn.ReLU()
+        self.bn8 = nn.BatchNorm3d(40)
 
         self.flat1 = nn.Flatten()
-        self.lin1 = nn.Linear(2240, 128)
+        self.lin1 = nn.Linear(2240, 256)
         self.relu9 = nn.ReLU()
         self.drop1 = nn.Dropout(0.5)
-        self.lin2 = nn.Linear(128, 16)
+        self.lin2 = nn.Linear(256, 16)
         self.relu6 = nn.ReLU()
         self.drop2 = nn.Dropout(0.4)
         self.out1 = nn.Linear(128, 16)
@@ -68,6 +69,7 @@ class HyCnn(nn.Module):
         x = self.conv7(x)
         x = self.relu7(x)
         x = self.conv8(x)
+        x = self.bn8(x)
         x = self.relu8(x)
 
         x = self.flat1(x)
