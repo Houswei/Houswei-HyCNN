@@ -98,7 +98,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run deep learning experiments on"
                                                  " various hyperspectral datasets")
     parser.add_argument('--iteration', type=int, default=20, help="iterations to run...")
-    parser.add_argument('--modelType', type=int, default=4, help="iterations to run...")
+    parser.add_argument('--modelType', type=int, default=5, help="iterations to run...")
 
     args = parser.parse_args()
 
@@ -112,6 +112,8 @@ if __name__ == "__main__":
         from models.hycnn4 import HyCnn
     elif(args.modelType == 1):
         from models.hycnn1 import HyCnn
+    elif (args.modelType == 5):
+        from models.hycnn5 import HyCnn
 
     # torch.backends.cudnn.benchmark = True
     # torch.backends.cudnn.deterministic = True

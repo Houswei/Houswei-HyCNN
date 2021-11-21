@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d6d2a97d-fc41-4a59-90c2-024815f4ce5c" name="Changes" comment="model change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/hycnn4.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/hycnn4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hycnn1.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/hycnn1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637309611559</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="model change">
+      <created>1637310337690</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1637310337690</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +238,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ex" />
@@ -249,11 +258,19 @@
           <line>45</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/hycnn5.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="x.shape" language="Python" />
+        <watch expression="tdnn5_out.shape" language="Python" />
+        <watch expression="stat_pooling.shape" language="Python" />
+        <watch expression="mean.shape" language="Python" />
+        <watch expression="std.shape" language="Python" />
       </configuration>
     </watches-manager>
   </component>

@@ -56,6 +56,7 @@ class HyCnn(nn.Module):
         return x
 
     def loadWeights(self, sPath, device):
+        print("load weights", sPath)
         self.load_state_dict(torch.load(sPath, map_location=device))
         return True
 
