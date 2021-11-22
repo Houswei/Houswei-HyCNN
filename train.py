@@ -125,7 +125,7 @@ if __name__ == "__main__":
     snapshotPath = "./snapshot/snapshot-loss-4-acc-4.pth"
     dataPath = "data/Indian_pines_corrected.mat"
     labelPath = "data/Indian_pines_gt.mat"
-    allDataset = HyDataSet(dataPath, labelPath, name="indian_pines", windowSize=3)  # 定义的数据集
+    allDataset = HyDataSet(dataPath, labelPath, name="indian_pines", windowSize=5)  # 定义的数据集
     img_inds = np.arange(len(allDataset))
     np.random.shuffle(img_inds)
     train_inds = img_inds[:int(testRation * len(img_inds))]

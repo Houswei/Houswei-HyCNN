@@ -12,7 +12,7 @@ import torch
 
 
 class HyCnn(nn.Module):
-    def __init__(self, input_dim=9, num_classes=16):
+    def __init__(self, input_dim=25, num_classes=16):
         super(HyCnn, self).__init__()
         self.tdnn1 = nn.Conv1d(input_dim, 128, kernel_size=5, padding=2)
         self.tdnn2 = nn.Conv1d(128, 128, kernel_size=3, padding=1)
