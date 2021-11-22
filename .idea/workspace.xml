@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637455744395</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="model change">
+      <created>1637577767765</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1637577767766</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,12 +273,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/hycnn5.py</url>
-          <line>47</line>
+          <line>49</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/hycnn5.py</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
